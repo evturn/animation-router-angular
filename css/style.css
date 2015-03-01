@@ -36,6 +36,29 @@ li {
 
 .page-home      { background:lightyellow; color:#000000; }
 
+.ng-enter {
+	animation: scaleUp 0.5s both ease-in; z-index: 8888; 
+}
+
+.ng-leave {
+	animation: slideOutLeft 0.5s both ease-in; z-index: 9999; 
+}
+
+.ng-enter       { z-index: 8888; }
+.ng-leave       { z-index: 9999; }
+
+.page-home.ng-enter         { animation: scaleUp 0.5s both ease-in; }
+.page-home.ng-leave         { transform-origin: 0% 0%; animation: rotateFall 1s both ease-in; }
+
+
+.page-about.ng-enter        { animation:slideInRight 0.5s both ease-in; }
+.page-about.ng-leave        { animation:slideOutLeft 0.5s both ease-in; }
+
+
+.page-contact.ng-leave      { transform-origin: 50% 50%; animation: rotateOutNewspaper .5s both ease-in; }
+.page-contact.ng-enter      { animation:slideInUp 0.5s both ease-in; }
+
+
 @keyframes rotateFall {
     0%      { transform: rotateZ(0deg); }
     20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
