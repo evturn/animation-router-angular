@@ -24,3 +24,14 @@ ul {
 li {
 	list-style-type: none;
 }
+
+.page        {
+    bottom:0; 
+    padding-top:200px;
+    position:absolute; 
+    text-align:center;
+    top:0;  
+    width:100%; 
+}
+
+.page-home      { background:lightyellow; color:#000000; }
